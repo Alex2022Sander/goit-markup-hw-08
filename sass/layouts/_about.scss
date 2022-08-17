@@ -1,0 +1,27 @@
+.about-card-icon {
+    background-color: rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+    height: 120px;
+    border: none;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  
+  .about-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: $current-color;
+      margin-bottom: 10px;
+      
+  }
+  .about-text {
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: 1.7;
+      
+    }

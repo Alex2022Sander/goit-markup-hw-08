@@ -1,0 +1,23 @@
+.clients-list {
+    --card-item: 6;
+  }
+  
+  .clients-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    padding: 16px;
+    border: 1px solid $social-icon;
+    fill: $social-icon;
+    border-radius: 4px;
+    transition-property: border, fill;
+transition-duration: $duration;
+transition-timing-function: $cubic-bezier;
+  }
+  .clients-link:hover,
+.clients-link:focus {
+  border: 1px solid $blue-logo-color;
+  fill: $blue-logo-color;
+}

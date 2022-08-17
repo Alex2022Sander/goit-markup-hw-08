@@ -1,0 +1,35 @@
+.register-checkbox:checked + 
+.register-icon .register-icon-uncheck {
+  opacity: 1;
+  transition: opacity 500ms ease-out, 
+  visibility 500ms ease-out;
+}
+.register-icon-uncheck {
+  transition: fill $duration $cubic-bezier;
+}
+
+.register-icon-check {
+opacity: 0;
+visibility: hidden;
+  transition: opacity 500ms ease-out, visibility 500ms ease-out;
+}
+
+
+.register-checkbox:checked + .register-icon .register-icon-check {
+  opacity: 1;
+  visibility: visible;
+}
+.register-checkbox:hover + 
+.register-icon .register-icon-uncheck,
+.register-checkbox:focus + 
+.register-icon .register-icon-uncheck {
+fill: $blue-logo-color;
+}
+
+.close-btn:hover .modal-btn-icon,
+.close-btn:focus .modal-btn-icon {
+  fill: $blue-logo-color;
+}
+.register-form-agreement-link {
+  color: $blue-logo-color;
+}
