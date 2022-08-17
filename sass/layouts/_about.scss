@@ -1,4 +1,4 @@
-.about-card-icon {
+.about__card-icon {
   display: flex;
   padding: 25px 100px;
   border-radius: 4px;
@@ -6,16 +6,36 @@
     margin-bottom: var(--card-set-gap);
     align-items: center;
     justify-content: center;
-    
+    border: none;
+
     }
-    .about-list{
-      @include mq(tab){
-          --cards-item: 2;}
-      @include mq(desk){
-          --cards-item: 4;}
+    .about__list {
+      display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 4;
+    
+  }
+      }
+  .about__item {
+    @media screen and (min-width: 478px) {
+      width: 450px;
+    }
+  @media screen and (min-width: 768px) {
+      width: 354px;
       }
   
-  .about-title {
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+  .about__title {
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
@@ -28,4 +48,8 @@
         text-align: center;}
         
       }
-   
+      .about__text{
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        line-height: 1.7;
+      }

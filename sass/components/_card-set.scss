@@ -4,9 +4,9 @@
     flex-wrap: wrap;
 
 @include mq(tab){
-      --card-item:2;}
+      --card-item: 2;}
 @include mq(desk){
-      --card-item:3;}
+      --card-item: 3;}
     
     /* margin-top: calc(-1 * $cards-set-gap);
     margin-left: calc(-1 * $cards-set-gap); */
