@@ -1,14 +1,19 @@
 .about-card-icon {
+  display: flex;
+  padding: 25px 100px;
+  border-radius: 4px;
     background-color: rgba(245, 244, 250, 1);
-    margin-bottom: 30px;
-    height: 120px;
-    border: none;
-    padding: 25px;
-    display: flex;
+    margin-bottom: var(--card-set-gap);
     align-items: center;
     justify-content: center;
+    
     }
-  
+    .about-list{
+      @include mq(tab){
+          --cards-item: 2;}
+      @include mq(desk){
+          --cards-item: 4;}
+      }
   
   .about-title {
       font-weight: 700;
@@ -17,11 +22,10 @@
       text-transform: uppercase;
       color: $current-color;
       margin-bottom: 10px;
-      
-  }
-  .about-text {
-      font-weight: 400;
       letter-spacing: 0.03em;
-      line-height: 1.7;
-      
-    }
+
+      @include mq(mob-only) {
+        text-align: center;}
+        
+      }
+   

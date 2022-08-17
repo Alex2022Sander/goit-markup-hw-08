@@ -472,6 +472,7 @@ margin-bottom: 4px;
 }
 
 .card-item {
+
     flex-basis: calc(100% / var(--card-item) - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
