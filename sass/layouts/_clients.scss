@@ -38,9 +38,10 @@ transition-timing-function: $cubic-bezier;
 @media screen and (min-width: 1200px) {
   width: 170px;
 }
+
   }
-  .clients-link:hover,
-.clients-link:focus {
+  .clients__link:hover,
+.clients__link:focus {
   border: 1px solid $blue-logo-color;
   fill: $blue-logo-color;
 }
