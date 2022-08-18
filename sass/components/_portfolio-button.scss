@@ -1,0 +1,39 @@
+.select-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 8px;
+    margin-bottom: 50px;
+    row-gap: 8px;
+    column-gap: 15px;
+  
+    @include mq(tab) {
+      justify-content: center;
+    }
+  }
+  
+  .select-list__button {
+    padding: 6px 22px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: $color-dark;
+    background-color: $light-gray-backg;
+    border: none;
+    border-radius: 4px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $blue-logo-color;
+      box-shadow: 0px 4px 4px 0px $button-shadow;
+    }
+  }
+  
