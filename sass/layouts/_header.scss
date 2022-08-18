@@ -5,9 +5,15 @@
     letter-spacing: 0.02em;
   border-bottom: 1px solid 
   $color-border-header;
+  @include mq(mob-only) {
+    position: relative;
+    
+  }
   }
   
-  .header-container {
+  .header__containe {
+    @include mq(tab) {
       display: flex;
       align-items: center;
+    }
     }

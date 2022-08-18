@@ -1,0 +1,52 @@
+.contact {
+    @include mq(mob-only) {
+      display: none;
+    }
+  
+    margin-left: auto;
+  
+    @include mq(desk) {
+      display: inline-flex;
+    }
+  }
+  
+  .contact__item {
+    @include mq(desk) {
+      &:not(:last-child) {
+        margin-right: var(--card-set-gap);
+      }
+    }
+    @include mq(tab-only) {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .contact__link {
+    @include mq(noDesk) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+    }
+  
+    @include mq(desk) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    display: flex;
+    margin-left: auto;
+    transition: color, 250ms, $cubic-bezier ,$duration;
+  }
+  
+  .contact__link:hover,
+  .contact__link:focus {
+    color: $blue-logo-color;
+  }
+  
+  .contact__icon {
+    display: block;
+    content: '';
+    align-self: center;
+    fill: currentColor;
+    margin-right: 10px;
+  }
