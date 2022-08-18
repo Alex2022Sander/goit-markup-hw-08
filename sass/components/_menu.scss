@@ -23,8 +23,7 @@
   }
   .menu-button__icon {
     display: block;
-  
-    fill: currentColor;
+  fill: currentColor;
   }
   
   .menu-button .icon-cross {
@@ -132,3 +131,27 @@
     letter-spacing: 0.02em;
     color: $blue-logo-color;
   }
+  /*
+  .menu-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-color;
+    overflow: auto;
+    padding: 48px 40px;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100%;
+    z-index: 99;
+    &.is-open {
+      transform: translateX(0);
+    }
+    transition: transform 500ms $cubic-bezier;
+    @include mq(tab) {
+      display: none;
+    }
+  }
+  */
