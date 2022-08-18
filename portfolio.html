@@ -266,32 +266,42 @@
     <!--подвал-->
     <footer class="footer">
       <div class="container">
-          <div class="footer-container">
-              <div class="footer-address">
+          <ul class="list footer__list">
+              <li class="footer__item">
               <a href="index.html" class="logo">Web<span class="white">Studio</span></a>
-              <address class="address">
-                  <ul class="list address-list">
-                      <li>
-                          <a
-                          href="https://goo.gl/maps/N5DiG7p4qbo636EXA"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="link street">г. Киев, пр-т Леси Украинки, 26
-                        </a>
-                      </li>
-                      <li><a href="mailto:info@example.com" class="link address-link">info@example.com</a>
-                      <li>
-                          <a href="tel:+380991111111" class="link address-link">+38 099 111 11 11</a>
-                      </li>
-                  </ul>
-              </address>
-          </div>
       
-          <div class="footer-social">
-              <h3 class="subscribe-title">приєднуйтесь</h3>
+      
+              <address class="address">
+                <ul class="list footer-contacts" id="contacts">
+                  <li class="footer-contacts__item">
+                    <a
+                      href="https://goo.gl/maps/6LCePJ9uV5C26gQX8"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="link footer-contacts__link street"
+                    >
+                      г. Киев, пр-т Леси Украинки, 26
+                    </a>
+                  </li>
+                  <li class="footer-contacts__item">
+                    <a href="mailto:info@example.com" class="link footer-contacts__link"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer-contacts__item">
+                    <a href="tel:+380991111111" class="link footer-contacts__link"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </li>
+      
+          <li class="subscription footer__item">
+              <h3 class="subscription__follow">приєднуйтесь</h3>
       
               <ul class="list social-list">
-                <li class="social-item">
+                <li class="social-list__item">
                   <a href="javascript:;" target="_blank" class="link social-link-icon">
                     <svg class="social-icon" width="20px" height="20px">
                       <use href="./images/icons.svg#instagram"></use>
@@ -299,7 +309,7 @@
                   </a>
                 </li>
       
-                <li class="social-item">
+                <li class="social-list__item">
                   <a href="javascript:;" target="_blank" class="link social-link-icon">
                     <svg class="social-icon" width="20px" height="20px">
                       <use href="./images/icons.svg#twitter"></use>
@@ -307,7 +317,7 @@
                   </a>
                 </li>
       
-                <li class="social-item">
+                <li class="social-list__item">
                   <a href="javascript:;" target="_blank" class="link social-link-icon">
                     <svg class="social-icon" width="20px" height="20px">
                       <use href="./images/icons.svg#facebook"></use>
@@ -315,7 +325,7 @@
                   </a>
                 </li>
       
-                <li class="social-item">
+                <li class="social-list__item">
                   <a href="javascript:;" target="_blank" class="link social-link-icon">
                     <svg class="social-icon" width="20px" height="20px">
                       <use href="./images/icons.svg#linkedin"></use>
@@ -323,32 +333,31 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </li>
+      <!--форма футер-->
+      <li class="subscription footer__item">
+        <p class="subscription__follow">Подпишитесь на рассылку</p>
       
-            <div class="footer-submit">
-              <p class="subscribe-title">Підпишіться на розсилку</p>
-      <form class="footer-submit-form">
-                <input
-                  class="footer-submit-input"
-                  type="email"
-                  name="email"
-                  id="email-footer"
-                  placeholder="E-mail"
-                  required
-                />
-      <button type="submit" class="hero-button">
-                    <span class="span-subscribe">Підписатися</span>
-                    <svg class="social-icon" width="24px" height="24px">
-                      <use href="./images/icons.svg#icon-footer-send"></use>
-                    </svg>
-                  </button>
-              </form>
-            </div>
+        <form class="subscribe-form">
+          <input
+            class="subscribe-form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
       
-          </div>
+          <button type="button" class="hero-button">
+            <span class="span-subscribe"> Подписаться</span>
+            <svg class="social-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#footer-send"></use>
+            </svg>
+          </button>
+        </form>
+      </li>
+          </ul>
       </div>
-      
-      
       </footer>
   </body>
 </html>
