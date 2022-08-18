@@ -27,6 +27,9 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .no-scroll {
   overflow: hidden;
@@ -793,6 +796,194 @@ img {
   margin-right: 10px;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.mobile-menu .content {
+  height: 100%;
+  background-color: #fff;
+  width: 70%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 250ms linear 250ms;
+  transition: -webkit-transform 250ms linear 250ms;
+  transition: transform 250ms linear 250ms;
+  transition: transform 250ms linear 250ms, -webkit-transform 250ms linear 250ms;
+}
+
+.mobile-menu.is-open .content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-button {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: #000000;
+  z-index: 100;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+.menu-button.is-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-50%, 25%);
+          transform: translate(-50%, 25%);
+}
+
+.menu-button__icon {
+  display: block;
+  fill: currentColor;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  position: fixed;
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.mob-nav {
+  color: #000000;
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: #2196f3;
+}
+
+.mob-nav__link--active {
+  color: #2196f3;
+}
+
+.mob-contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mob-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+.mob-contacts__link:hover, .mob-contacts__link:focus {
+  color: #2196f3;
+}
+
+.tel {
+  font-size: 34px;
+}
+
+.mob-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mob-socials__item:not(:last-child) .mob-socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 /* block 4  */
 .header {
   font-weight: 500;
@@ -933,6 +1124,11 @@ img {
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.7;
+}
+
+.card-item {
+  -ms-flex-preferred-size: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+      flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
 }
 
 .card-text {
