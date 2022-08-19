@@ -306,7 +306,18 @@ transition-timing-function: $cubic-bezier;
   transition: transform 500ms ease-out;
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
 }
-
+@media screen and (min-width: 478px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0);
           transform: scale(0);

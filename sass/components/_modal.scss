@@ -32,6 +32,21 @@
        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 4px;
       transition: transform 500ms ease-out;
+
+      @media screen and (min-width: 478px) {
+        width: 450px;
+        height: 609px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 450px;
+        height: 609px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+      
+      }
+
       }
       .backdrop.is-hidden .modal {
         transform: scale(0);
