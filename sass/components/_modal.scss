@@ -33,6 +33,11 @@
       border-radius: 4px;
       transition: transform 500ms ease-out;
 
+      @media screen and (min-width: 390px) {
+        width: 380px;
+        height: 630px;
+      }
+
       @media screen and (min-width: 478px) {
         width: 450px;
         height: 609px;
@@ -51,7 +56,22 @@
       .backdrop.is-hidden .modal {
         transform: scale(0);
       }
+.register-form-agreement-text 
 
+{
+  @media screen and (min-width: 478px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+      
+  }
+  
+
+}
       .close-btn {
         position: absolute;
         top: 8px;

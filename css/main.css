@@ -306,6 +306,12 @@ transition-timing-function: $cubic-bezier;
   transition: transform 500ms ease-out;
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
 }
+@media screen and (min-width: 390px) {
+  .modal {
+    width: 380px;
+    height: 630px;
+  }
+}
 @media screen and (min-width: 478px) {
   .modal {
     width: 450px;
@@ -323,6 +329,16 @@ transition-timing-function: $cubic-bezier;
           transform: scale(0);
 }
 
+@media screen and (min-width: 478px) {
+  .register-form-agreement-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .register-form-agreement-text {
+    font-size: 12px;
+  }
+}
 .close-btn {
   position: absolute;
   top: 8px;
