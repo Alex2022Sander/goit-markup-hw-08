@@ -511,11 +511,48 @@ type="image/jpeg"
           </div>
     </li>
 <li class="team__item card-item__item">
+  <picture>
+    <!--Desktop-->
+    <source
+      media="(min-width: 1200px)"
+      srcset="./images/team/img3@1x_lg.webp 1x, ./images/team/img3@2x_lg.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="./images/team/img3@1x_lg.jpg 1x, ./images/team/img3@2x_lg.jpg 2x"
+      type="image/jpeg"
+    />
 
-  
-    <img src="./images/Marketing.jpg"
-    alt="Маркетинг" width="450"
+    <!--tablet-->
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/team/img3@1x_md.webp 1x, ./images/team/img3@2x_md.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/team/img3@1x_md.jpg 1x, ./images/team/img3@2x_md.jpg 2x"
+      type="image/jpeg"
+    />
+    <!--mobile-->
+    <source
+      media="(max-width: 767px)"
+      srcset="./images/team/img3@1x_sm.webp 1x, ./images/team/img3@2x_sm.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/team/img3@1x_sm.jpg 1x, ./images/team/img3@2x_sm.jpg 2x"
+      type="image/jpeg"
+    />
+
+    <img src="./images/team/img3@1x_sm.jpg"
+    alt="Маркетинг" 
+    width="450"
     height="460">
+  </picture>
+
 <div class="team__content">
     <h3 class="title team__title">Николай Тарасов</h3>
     <p class="team__text">Marketing</p>
@@ -557,11 +594,51 @@ type="image/jpeg"
     </ul>
   </div>
 </li>
+
+
     <li class="team__item card-item__item">
-        <img src="./images/UIDesigner.jpg"
+      <picture>
+        <!--Desktop-->
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/team/img4@1x_lg.webp 1x, ./images/team/img4@2x_lg.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/team/img4@1x_lg.jpg 1x, ./images/team/img4@2x_lg.jpg 2x"
+          type="image/jpeg"
+        />
+
+        <!--tablet-->
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/team/img4@1x_md.webp 1x, ./images/team/img4@2x_md.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/team/img4@1x_md.jpg 1x, ./images/team/img4@2x_md.jpg 2x"
+          type="image/jpeg"
+        />
+        <!--mobile-->
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/team/img4@1x_sm.webp 1x, ./images/team/img4@2x_sm.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/team/img4@1x_sm.jpg 1x, ./images/team/img4@2x_sm.jpg 2x"
+          type="image/jpeg"
+        />
+
+        <img src="./images/team/img4@1x_sm.jpg"
         alt="Дизайнер пользовательского интерфейса"
          width="450"
         height="460">
+      </picture>
+
 <div class="team__content">
         <h3 class="title team__title">Михаил Ермаков</h3>
         <p class="team__text">UI Designer</p>
