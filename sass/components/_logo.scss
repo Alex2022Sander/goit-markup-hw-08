@@ -2,15 +2,41 @@
     color: $blue-logo-color;
     font-family: 'Raleway',cursive;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
-    display: flex;
+    letter-spacing: 0.03em;
+    padding: 16px 0px;
+
+    @include mq(tab) {
+      padding: 0;
+      margin-right: 88px;
+    }
+  
+    @include mq(desk) {
+      padding: 0;
+      margin-right: 93px;
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
-  .header .logo {
-    margin-right: 93px;
+  .nav__logo {
+    padding: 16px 15px 16px 0px;
+    @include mq(tab) {
+        margin-right: 88px;
+      }
+    
+      @include mq(desk) {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
+      }
   }
+
+  /*.header .logo {
+    margin-right: 93px;
+  }*/
 
   .dark-logo {
     color: $dark-logo-color;
