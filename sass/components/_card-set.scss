@@ -3,9 +3,11 @@
     display: flex;
     flex-wrap: wrap;
 
-@include mq(tab){
+@include mq(tab)
+{
       --card-item: 2;}
-@include mq(desk){
+@include mq(desk)
+{
       --card-item: 3;}
     
     /* margin-top: calc(-1 * $cards-set-gap);
