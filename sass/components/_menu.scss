@@ -41,8 +41,9 @@
   
   .menu-container {
     position: fixed;
-    width: 100%;
+    gap: 64px;
     height: 100%;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: $white-color;
@@ -63,6 +64,7 @@
   }
   .mob-nav {
     color: $dark-logo-color;
+    margin-bottom: auto;
   }
   
   .mob-nav__item {
@@ -86,10 +88,7 @@
     color: $blue-logo-color;
   }
   
-  .mob-contacts {
-    margin-top: auto;
-    margin-bottom: 64px;
-  }
+  
   
   .mob-contacts__item {
     &:not(:last-child) {
