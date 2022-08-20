@@ -559,6 +559,11 @@ transition-timing-function: $cubic-bezier;
   color: rgba(117, 117, 117, 0.5);
 }
 
+.register-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .register-form-agreement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +577,11 @@ transition-timing-function: $cubic-bezier;
   gap: 8px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.register-form-agreement {
+  font-size: 12px;
+  line-height: 1.1666666667;
 }
 
 .section {
@@ -774,11 +784,15 @@ transition-timing-function: $cubic-bezier;
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .footer-social-title {
@@ -1180,14 +1194,6 @@ transition-timing-function: $cubic-bezier;
   border: none;
 }
 
-.about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
 @media screen and (min-width: 768px) {
   .about__list {
     --card-item: 2;
@@ -1230,12 +1236,6 @@ transition-timing-function: $cubic-bezier;
   }
 }
 
-.about__text {
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 1.7;
-}
-
 .card-item {
   -ms-flex-preferred-size: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
       flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
@@ -1263,7 +1263,7 @@ transition-timing-function: $cubic-bezier;
 }
 
 .clients__list {
-  --card-item: 6;
+  --card-item: 2;
 }
 @media screen and (min-width: 478px) {
   .clients__list {
@@ -1275,6 +1275,12 @@ transition-timing-function: $cubic-bezier;
     --card-item: 3;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    --card-item: 6;
+  }
+}
+
 .clients__link {
   cursor: pointer;
   display: -webkit-box;
@@ -1703,7 +1709,7 @@ transition-timing-function: $cubic-bezier;
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .team__list {
     --card-item: 2;
   }

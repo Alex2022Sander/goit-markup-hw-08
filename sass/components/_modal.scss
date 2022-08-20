@@ -194,6 +194,10 @@
         color: rgba(117, 117, 117, 0.5);
       }
 
+      .register-icon {
+        flex-shrink: 0;
+    }
+
       .register-form-agreement {
         display: flex;
         align-items: center;
@@ -202,3 +206,7 @@
         margin-bottom: 30px;
         cursor: pointer;
       }
+      .register-form-agreement {
+        font-size: 12px;
+        line-height: calc(14/12);
+    }

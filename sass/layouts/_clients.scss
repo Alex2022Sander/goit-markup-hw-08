@@ -1,4 +1,6 @@
 .clients__list {
+  --card-item: 2;
+
   @media screen and (min-width: 478px) {
     --card-item: 2;
   }
@@ -8,9 +10,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-  
-  }
     --card-item: 6;
+  }
+    
   }
   
 

@@ -11,10 +11,6 @@
     }
     
     .about__list {
-      display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-
   @media screen and (min-width: 768px) {
     --card-item: 2;
 
@@ -23,6 +19,8 @@
     --card-item: 4;
     
   }
+
+  
       }
   .about__item {
     @media screen and (min-width: 478px) {
@@ -49,11 +47,7 @@
         text-align: center;}
         
       }
-      .about__text{
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        line-height: 1.7;
-      }
+      
       .card-item {
         flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
       }
