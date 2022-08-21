@@ -24,7 +24,7 @@
     align-items: baseline;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 60px;
+    gap: 60px 150px;
     justify-content: center;
     text-align: center;
   }
@@ -45,11 +45,13 @@
 .footer__logo {
   margin-bottom: 20px;
   display: flex;
+
   @include mq(noDesk) {
     justify-content: center;
     margin-right: 0;
   }
 }
+
 
 .address {
   color: $footer-primary-color;

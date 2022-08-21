@@ -8,11 +8,11 @@
     letter-spacing: 0.03em;
     padding: 16px 0px;
 
-
+.header.logo {
     @include mq(tab) {
       padding: 0;
       margin-right: 88px;
-    
+    }
 }
     @include mq(desk) {
       padding: 0;
@@ -21,8 +21,7 @@
       line-height: 1.19;
     }
   }
-
-  .nav__logo {
+.nav__logo {
     padding: 16px 15px 16px 0px;
     @include mq(tab) {
         margin-right: 88px;
@@ -34,7 +33,11 @@
         line-height: 1.19;
       }
   }
-
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
+}
   /*.header .logo {
     padding: 0;
     margin-right: 93px;

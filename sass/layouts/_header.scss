@@ -11,9 +11,12 @@
   }
   }
   
+  
   .header__containe {
+
     @include mq(tab) {
       display: flex;
       align-items: center;
     }
     }
+

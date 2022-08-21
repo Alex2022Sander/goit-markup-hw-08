@@ -169,7 +169,7 @@ img {
   padding: 16px 0px;
 }
 @media screen and (min-width: 768px) {
-  .logo {
+  .logo .header.logo {
     padding: 0;
     margin-right: 88px;
   }
@@ -197,6 +197,12 @@ img {
     font-size: 26px;
     line-height: 1.19;
   }
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 /*.header .logo {
@@ -1321,7 +1327,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 60px;
+    gap: 60px 150px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
