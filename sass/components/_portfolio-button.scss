@@ -4,8 +4,8 @@
     justify-content: left;
     gap: 8px;
     margin-bottom: 50px;
-    row-gap: 8px;
-    column-gap: 15px;
+    row-gap: 15px;
+    column-gap: 8px;
   
     @include mq(tab) {
       justify-content: center;
