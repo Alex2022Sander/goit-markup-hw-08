@@ -243,6 +243,7 @@ transition-timing-function: $cubic-bezier;
 }
 
 /*.header .logo {
+  padding: 0;
   margin-right: 93px;
 }*/
 .dark-logo {
@@ -299,17 +300,9 @@ transition-timing-function: $cubic-bezier;
 .backdrop {
   position: fixed;
   top: 0;
+  overflow: auto;
   left: 0;
   z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -322,7 +315,12 @@ transition-timing-function: $cubic-bezier;
 
 .modal {
   position: relative;
-  width: 528px;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  max-width: 450px;
   height: 581px;
   padding: 40px;
   background-color: #ffffff;
@@ -336,19 +334,19 @@ transition-timing-function: $cubic-bezier;
 }
 @media screen and (min-width: 390px) {
   .modal {
-    width: 380px;
     height: 630px;
   }
 }
 @media screen and (min-width: 478px) {
   .modal {
-    width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 450px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     height: 609px;
   }
 }
@@ -359,8 +357,8 @@ transition-timing-function: $cubic-bezier;
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: translate(-50%) scale(0);
+          transform: translate(-50%) scale(0);
 }
 
 @media screen and (min-width: 478px) {
@@ -1265,11 +1263,6 @@ transition-timing-function: $cubic-bezier;
 .clients__list {
   --card-item: 2;
 }
-@media screen and (min-width: 478px) {
-  .clients__list {
-    --card-item: 2;
-  }
-}
 @media screen and (min-width: 768px) {
   .clients__list {
     --card-item: 3;
@@ -1709,11 +1702,6 @@ transition-timing-function: $cubic-bezier;
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 768px) {
-  .team__list {
-    --card-item: 2;
-  }
-}
 @media screen and (min-width: 1200px) {
   .team__list {
     --card-item: 4;

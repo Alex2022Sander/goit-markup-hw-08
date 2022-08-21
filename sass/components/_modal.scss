@@ -7,15 +7,15 @@
     .backdrop {
         position: fixed;
         top: 0;
+        overflow: auto;
         left: 0;
         z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        //display: flex;
+        //align-items: center;
+        //justify-content: center; 
       width: 100%;
          height: 100%;
          background-color: $modal-background;
-         
          opacity: 1;
          visibility: visible;
          pointer-events: initial;
@@ -24,7 +24,11 @@
       
       .modal {
         position: relative;
-        width: 528px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        max-width: 450px;
         height: 581px;
       padding: 40px;
       background-color: $white-color;
@@ -34,17 +38,19 @@
       transition: transform 500ms ease-out;
 
       @media screen and (min-width: 390px) {
-        width: 380px;
+        //width: 380px;
         height: 630px;
       }
 
       @media screen and (min-width: 478px) {
-        width: 450px;
+        //width: 450px;
         height: 609px;
       }
     
       @media screen and (min-width: 768px) {
-        width: 450px;
+        //width: 450px;
+        top: 50%; 
+        transform: translate(-50%, -50%);
         height: 609px;
       }
     
@@ -54,7 +60,7 @@
 
       }
       .backdrop.is-hidden .modal {
-        transform: scale(0);
+        transform: translate(-50%) scale(0);
       }
 .register-form-agreement-text 
 
@@ -87,6 +93,7 @@
         background-color: transparent;
       cursor: pointer;
       }
+
       .backdrop.is-hidden {
       opacity: 0;
       visibility: hidden;
