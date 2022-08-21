@@ -8,11 +8,11 @@
     letter-spacing: 0.03em;
     padding: 16px 0px;
 
-.header.logo {
+
     @include mq(tab) {
       padding: 0;
       margin-right: 88px;
-    }
+    
 }
     @include mq(desk) {
       padding: 0;
