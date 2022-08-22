@@ -6,9 +6,9 @@
     line-height: 1.16;
     text-decoration: none;
     letter-spacing: 0.03em;
-    padding: 16px 0px;
+    //padding: 16px 0px;
 
-.header.logo {
+.header .logo {
     @include mq(tab) {
       padding: 0;
       margin-right: 88px;
